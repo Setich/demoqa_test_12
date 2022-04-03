@@ -31,7 +31,7 @@ public class PracticeFormTests {
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("March");
         $(".react-datepicker__year-select").selectOption("1990");
-        $("[aria-label$='Choose Tuesday, March 13th, 1990']").click();
+        $("[aria-label$='March 13th, 1990']").click();
         $("#subjectsInput").setValue("Physics").pressEnter();
         $(byText("Music")).click();
         $("#uploadPicture").uploadFromClasspath("123.txt");
