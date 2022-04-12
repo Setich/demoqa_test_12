@@ -1,4 +1,4 @@
-package guru.qa;
+package guru.qa.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.executeJavaScript;
 
 public class PracticeFormTests {
 
@@ -21,6 +21,10 @@ public class PracticeFormTests {
     @Test
     void fillFormTest() {
         open("automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+        executeJavaScript("$('footer').remove()");
+        executeJavaScript("$('#fixedban').remove()");
+
         $("#firstName").setValue("Aleksey");
         $("#lastName").setValue("Set");
         $("#userEmail").setValue("jaja@mail.ru");
