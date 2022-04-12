@@ -57,7 +57,7 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage chooseBirthDay(String day, String month, String year) {
+    public RegistrationFormPage chooseBirthDayDate(String day, String month, String year) {
         $("#dateOfBirthInput").click();
         calendarComponent.setDate(day, month, year);
 

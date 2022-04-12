@@ -48,7 +48,7 @@ public class PracticeFormTestsWithPageObjectsTest {
                 .setUserEmail(email)
                 .chooseGender(gender)
                 .setUserNumber(userNumber)
-                .chooseBirthDay(day, month, year)
+                .chooseBirthDayDate(day, month, year)
                 .setSubjectsInput(subject)
                 .chooseHobbie(hobbie)
                 .setUploadPicture(uploadPicture)
