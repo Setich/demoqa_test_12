@@ -108,73 +108,12 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage verifyUserName(String key, String value) {
+    public RegistrationFormPage verifyForm(String key, String value) {
         tableData.$(byText(key)).parent().
                 shouldHave(text(value));
 
         return this;
     }
 
-    public RegistrationFormPage verifyStudentEmail(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
 
-        return this;
-    }
-
-    public RegistrationFormPage verifyGender(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
-
-        return this;
-    }
-
-    public RegistrationFormPage verifyMobile(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
-
-        return this;
-    }
-
-    public RegistrationFormPage verifyDateOfBirth(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
-
-        return this;
-    }
-
-    public RegistrationFormPage verifySubjects(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
-
-        return this;
-    }
-
-    public RegistrationFormPage verifyHobbies(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
-
-        return this;
-    }
-
-    public RegistrationFormPage verifyPicture(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
-
-        return this;
-    }
-
-    public RegistrationFormPage verifyAddress(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
-
-        return this;
-    }
-
-    public RegistrationFormPage verifyStateAndCity(String key, String value) {
-        tableData.$(byText(key)).parent().
-                shouldHave(text(value));
-
-        return this;
-    }
 }

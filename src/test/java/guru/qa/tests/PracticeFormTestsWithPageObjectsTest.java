@@ -58,16 +58,16 @@ public class PracticeFormTestsWithPageObjectsTest {
                 .pressSubmit()
 
                 //verify
-                .verifyUserName("Student Name", expectedFullName)
-                .verifyStudentEmail("Student Email", email)
-                .verifyGender("Gender", gender)
-                .verifyMobile("Mobile", userNumber)
-                .verifyDateOfBirth("Date of Birth", expectedDateofBirth)
-                .verifySubjects("Subjects", subject)
-                .verifyHobbies("Hobbies", hobbie)
-                .verifyPicture("Picture", expectedImg)
-                .verifyAddress("Address", currentAddress)
-                .verifyStateAndCity("State and City", expectedStateAndCity);
+                .verifyForm("Student Name", expectedFullName)
+                .verifyForm("Student Email", email)
+                .verifyForm("Gender", gender)
+                .verifyForm("Mobile", userNumber)
+                .verifyForm("Date of Birth", expectedDateofBirth)
+                .verifyForm("Subjects", subject)
+                .verifyForm("Hobbies", hobbie)
+                .verifyForm("Picture", expectedImg)
+                .verifyForm("Address", currentAddress)
+                .verifyForm("State and City", expectedStateAndCity);
 
     }
 }
